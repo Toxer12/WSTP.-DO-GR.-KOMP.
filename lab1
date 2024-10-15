@@ -78,3 +78,23 @@ x = linspace(-pi, pi, 100);
 >> title('Bardzo wazny wykres');
 >> legend('show');
 
+Zad 13
+img = imread("C:/Users/mateu/Downloads/rzeczka.jpg");
+>> imgd=double(img);
+imgd(:, 10:50, 1) = 255;
+>> imgd(:, 10:50, 2) = 255;
+>> imgd(:, 10:50, 3) = 0;
+>> imshow(imgd/255)
+
+Zad 14
+img = imread("C:/Users/mateu/Downloads/rzeczka.jpg");
+>> imgd=double(img);
+>> img=imgd(:, end:-1:1, :);
+>> imgc=[imgd img];
+>> imshow(imgc/255)
+
+Zad 15
+>> img = imread("C:/Users/mateu/Downloads/rzeczka.jpg");
+>> imgd=double(img);
+>> negatyw = 255 - imgd;
+>> imshow(negatyw/255)
