@@ -38,4 +38,43 @@ Zad 6
  x=[3 1;-1 1]^-1*[31 -9]'
 
 Zad 7 
-aa(end-1:1, :) (dokoncz
+aa(end-1:-1:1, :)
+
+Zad8
+aa(aa>1 & aaaa=<5) +=10
+
+Zad 9
+aa-mean(aa)
+
+Zad 10
+aa=[1,2,3;4,5,4]
+[w, k] = size(aa);
+aaa = -1 + 2 * rand(w, k)
+
+Zad 11
+aa = round(5 * rand(4,3))
+
+Zad 12
+aa = round(5 * rand(4,3))
+
+for i = 1:size(aa, 1)     % Iteracja po wierszach
+    for j = 2:size(aa, 2) % Iteracja po kolumnach, od 2. kolumny do ostatniej
+        aa(i, j) = aa(i, j) + aa(i, j-1); % Zwiększenie wartości o wartość z lewej kolumny
+    end
+end
+
+aa
+
+Zad 12
+x = linspace(-pi, pi, 100);
+>> y1 = abs(sin(x));
+>> y2 = atan(x);
+>> plot(x, y1, 'b-', 'DisplayName', 'abs(sin(x))');
+>> hold on;
+>> plot(x, y2, 'g-', 'DisplayName', 'atan(x)');
+>> hold off;
+>> xlabel('IKSY');
+>> ylabel('IGREKI');
+>> title('Bardzo wazny wykres');
+>> legend('show');
+
