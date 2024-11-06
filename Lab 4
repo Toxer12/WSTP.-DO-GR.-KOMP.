@@ -1,1 +1,9 @@
-
+Zad 1
+>> img = imread("C:/Users/local/Desktop/rzeczka.jpg");
+>> img = double(img);
+>> imshow(img/255)
+>> imgg = (img).^(1/1.5);
+>> imshow(imgg)
+>> imgg = (img/255).^(1/1.5);
+>> wynik = abs(imgg - ( img/255 ));
+>> imshow(wynik)
